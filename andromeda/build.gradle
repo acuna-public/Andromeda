@@ -1,0 +1,26 @@
+  apply plugin: 'com.android.library'
+  
+  android {
+    
+    compileSdkVersion 27
+    
+    defaultConfig {
+      
+      minSdkVersion 12
+      versionName project.property ('versionName')
+      vectorDrawables.useSupportLibrary = true
+      
+    }
+    
+  }
+  
+  apply from: 'https://raw.githubusercontent.com/acuna-public/MavenUpload/master/bintray.gradle'
+  apply from: 'https://raw.githubusercontent.com/acuna-public/MavenUpload/master/publish.gradle'
+  
+  dependencies {
+    
+    implementation fileTree (include: ['*.jar'], dir: 'libs')
+    
+    api project (':archiver')
+    
+  }
