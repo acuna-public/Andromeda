@@ -1,2 +1,2 @@
 # Andromeda
-Andromeda is an elegant wrapper for Android SDK
+Andromeda is a powerful wrapper for Android SDK which helps to make your code pretty
