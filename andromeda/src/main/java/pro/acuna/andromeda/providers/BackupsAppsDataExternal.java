@@ -48,8 +48,8 @@
 					
 					exec.add ("cp -R" + followSymlinks + " " + externalDataDir + "/* " + backupsPath);
 					
-					archieve.addPath (externalDataDir.getAbsolutePath ());
-					archieve.addFolder (backupsPath);
+					archieve.setFolderPath (externalDataDir.getAbsolutePath ());
+					archieve.add (backupsPath);
 					
 				}
 				

@@ -10,7 +10,7 @@
 		
 		1.2	28.06.2018
 		
-		Провайдеры
+		Добавлена поддержка провайдеров
 		
 	*/
 	
@@ -372,7 +372,7 @@
 				
 				exec.process ();
 				
-				archieve.compress ();
+				archieve.pack ();
 				archieve.close ();
 				
 				if (listener != null) listener.onFinish ();
@@ -390,8 +390,7 @@
 			try {
 				
 				archieve.open (backupFile);
-				archieve.destFolder (backupDir);
-				archieve.decompress ();
+				archieve.unpack (backupDir);
 				
 				for (Backups plugin : plugins)
 					for (String action : plugin.setActions ())

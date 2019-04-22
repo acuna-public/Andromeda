@@ -43,7 +43,7 @@
 				File file = new File (backupsPath, appInfo.packageName + ".apk");
 				exec.add (apps.extractApp (appInfo.appInfo.sourceDir, file, new ArrayList<String> ()));
 				
-				archieve.addFile (file);
+				archieve.add (file);
 				
 			} catch (Console.ConsoleException e) {
 				throw new BackupException (e);

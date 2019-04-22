@@ -43,8 +43,8 @@
 				
 				exec.add ("cp -R" + followSymlinks + " " + appInfo.appInfo.dataDir + "/* " + backupsPath);
 				
-				archieve.addPath (appInfo.appInfo.dataDir);
-				archieve.addFolder (backupsPath);
+				archieve.setFolderPath (appInfo.appInfo.dataDir);
+				archieve.add (backupsPath);
 				
 				return this;
 				

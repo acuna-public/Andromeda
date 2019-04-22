@@ -90,7 +90,7 @@
 						File file = new File (backupDir, action + ".json");
 						Files.write (array, file);
 						
-						archieve.addFile (file);
+						archieve.add (file);
 						
 					} catch (JSONException | IOException e) {
 						throw new BackupException (e);

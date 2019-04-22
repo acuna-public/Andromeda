@@ -86,5 +86,28 @@
 		public static String toString (Spannable spannable) throws JSONException {
 			return Arrays.toJSONObject (spannable).toString ();
 		}
-		
-	}
+    
+    public static SpannableString setSpan (SpannableString text, Object obj) {
+      
+      text.setSpan (obj, 0, Int.size (text), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+      return text;
+      
+    }
+    
+    public static SpannableString setFontTypeface (String text, int style) {
+      return setFontTypeface (new SpannableString (text), style);
+    }
+    
+    public static SpannableString setFontTypeface (SpannableString text, int style) {
+      return setSpan (text, new StyleSpan (style));
+    }
+    
+    public static SpannableString setFontFamily (String text, String name) {
+      return setFontFamily (new SpannableString (text), name);
+    }
+    
+    public static SpannableString setFontFamily (SpannableString text, String name) {
+      return (!name.equals ("") ? setSpan (text, new TypefaceSpan (name)) : text);
+    }
+    
+  }

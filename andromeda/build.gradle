@@ -7,7 +7,7 @@
     defaultConfig {
       
       minSdkVersion 12
-      versionName project.property ('versionName')
+      versionName project.property ('libraryVersion')
       vectorDrawables.useSupportLibrary = true
       
     }
@@ -21,6 +21,7 @@
     
     implementation fileTree (include: ['*.jar'], dir: 'libs')
     
-    api project (':archiver')
+		api 'pro.acuna:archiver:+'
+    //api project (':archiver')
     
   }
