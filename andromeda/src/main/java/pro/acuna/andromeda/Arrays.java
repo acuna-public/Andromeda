@@ -98,7 +98,7 @@
 						break;
 						
 					case Cursor.FIELD_TYPE_NULL:
-						output.put (key, null);
+						output.put (key, JSONObject.NULL);
 						break;
 						
 					case Cursor.FIELD_TYPE_STRING:
