@@ -8,6 +8,7 @@
       
       minSdkVersion 12
       versionName project.property ('libraryVersion')
+      
       vectorDrawables.useSupportLibrary = true
       
     }
@@ -22,5 +23,6 @@
     implementation fileTree (include: ['*.jar'], dir: 'libs')
     
 		api 'pro.acuna:archiver:+'
-  
+    //api project (':archiver')
+    
   }

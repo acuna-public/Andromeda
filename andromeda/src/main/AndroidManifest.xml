@@ -1,15 +1,15 @@
 <manifest
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	package="pro.acuna.andromeda"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="pro.acuna.andromeda"
 >
-	
-	<application>
-		
-		<service
-		android:name=".AppsService"
-		android:enabled="true"
-		/>
-		
-	</application>
+  
+  <application>
+    
+    <service
+    android:name=".AppsService"
+    android:enabled="true"
+    />
+    
+  </application>
 
 </manifest>
