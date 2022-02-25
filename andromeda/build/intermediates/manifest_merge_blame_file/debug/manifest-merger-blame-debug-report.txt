@@ -1,0 +1,18 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="pro.acuna.andromeda" >
+4
+5    <uses-sdk android:minSdkVersion="14" />
+5-->D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\main\AndroidManifest.xml
+6
+7    <application>
+7-->D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\main\AndroidManifest.xml:7:3-9:17
+8        <service
+8-->D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\main\AndroidManifest.xml:8:5-67
+9            android:name="pro.acuna.andromeda.AppsService"
+9-->D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\main\AndroidManifest.xml:8:14-41
+10            android:enabled="true" />
+10-->D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\main\AndroidManifest.xml:8:42-64
+11    </application>
+12
+13</manifest>

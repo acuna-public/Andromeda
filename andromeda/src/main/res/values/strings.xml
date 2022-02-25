@@ -1,0 +1,92 @@
+<resources>
+  
+  <string name="title_error">Error</string>
+  <string name="loading">Loading, please wait&#8230;</string>
+  <string name="action_done">Done</string>
+  <string name="title_alert">Alert</string>
+  <string name="yes">Yes</string>
+  <string name="no">No</string>
+  <string name="button_restart">Reboot</string>
+  <string name="title_color_picker">Select a color</string>
+  <string name="message_save_settings_success">Settings saved successfully</string>
+  <string name="action_exit">Exit</string>
+  <string name="action_about">About</string>
+  <string name="title_version">Version</string>
+  <string name="action_refresh">Refresh</string>
+  <string name="button_close">Close</string>
+  <string name="action_settings">Settings</string>
+  <string name="title_input">Data input</string>
+  <string name="interval_never">Never</string>
+  <string name="interval_minute_0">Every minute</string>
+  <string name="interval_minute_1">Every %n minute</string>
+  <string name="interval_minute_2">Every %n minutes</string>
+  <string name="interval_minute_3">Every %n munutes</string>
+  <string name="interval_day_0">Every day</string>
+  <string name="interval_day_1">Every %n day</string>
+  <string name="interval_day_2">Every %n days</string>
+  <string name="interval_day_3">Every %n days</string>
+  <string name="interval_week_0">Every week</string>
+  <string name="interval_week_1">Every %n week</string>
+  <string name="interval_week_2">Every %n weeks</string>
+  <string name="interval_week_3">Every %n weeks</string>
+  <string name="ok" translatable="false">OK</string>
+  <string name="cancel">Cancel</string>
+  
+  <string name="settings_theme">Theme</string>
+  <string name="settings_storage_type">Storage</string>
+  
+  <string name="dialog_title_account">Select account</string>
+  <string name="add">Add</string>
+	
+	<string name="button_save">Save</string>
+	<string name="success">Success</string>
+	
+	<string name="rate_dialog_title">Rate this app</string>
+	<string name="rate_dialog_message">If you enjoy this app - you can rate it. Thanks for your support!</string>
+	<string name="rate_dialog_ok">Rate It Now</string>
+	<string name="rate_dialog_cancel">Remind Me Later</string>
+	<string name="rate_dialog_no">No, Thanks</string>
+	<string name="alert_error_nointernet">Please check your internet-connection</string>
+	
+	<string-array name="month">
+		
+		<item>Январь</item>
+		<item>Февраль</item>
+		<item>Март</item>
+		<item>Апрель</item>
+		<item>Май</item>
+		<item>Июнь</item>
+		<item>Июль</item>
+		<item>Август</item>
+		<item>Сентябрь</item>
+		<item>Октябрь</item>
+		<item>Ноябрь</item>
+		<item>Декабрь</item>
+		
+	</string-array>
+	
+	<string-array name="day">
+		
+		<item>Mon</item>
+		<item>Tue</item>
+		<item>Wed</item>
+		<item>Thu</item>
+		<item>Fri</item>
+		<item>Sat</item>
+		<item>Sun</item>
+		
+	</string-array>
+	
+	<string-array name="day_full">
+		
+		<item>Понедельник</item>
+		<item>Вторник</item>
+		<item>Среда</item>
+		<item>Четверг</item>
+		<item>Пянтица</item>
+		<item>Суббота</item>
+		<item>Воскресенье</item>
+		
+	</string-array>
+	
+</resources>

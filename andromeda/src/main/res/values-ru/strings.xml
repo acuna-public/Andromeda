@@ -1,0 +1,91 @@
+<resources>
+  
+  <string name="title_error">Ошибка</string>
+  <string name="title_alert">Уведомление</string>
+  <string name="yes">Да</string>
+  <string name="no">Нет</string>
+  <string name="loading">Пожалуйста, подождите&#8230;</string>
+  <string name="action_done">Готово</string>
+  <string name="button_restart">Перезагрузить</string>
+  <string name="title_color_picker">Выберите цвет</string>
+  <string name="message_save_settings_success">Настройки успешно сохранены</string>
+  <string name="action_exit">Выход</string>
+  <string name="action_about">О программе</string>
+  <string name="title_version">Версия</string>
+  <string name="action_refresh">Обновить</string>
+  <string name="button_close">Закрыть</string>
+  <string name="action_settings">Настройки</string>
+  <string name="title_input">Ввод данных</string>
+  
+  <string name="interval_never">Никогда</string>
+  <string name="interval_minute_0">Каждую минуту</string>
+  <string name="interval_minute_1">Каждую %n минуту</string>
+  <string name="interval_minute_2">Каждые %n минуты</string>
+  <string name="interval_minute_3">Каждые %n минут</string>
+  <string name="interval_day_0">Каждый день</string>
+  <string name="interval_day_1">Каждый %n день</string>
+  <string name="interval_day_2">Каждые %n дня</string>
+  <string name="interval_day_3">Каждые %n дней</string>
+  <string name="interval_week_0">Каждую неделю</string>
+  <string name="interval_week_1">Каждую %n неделю</string>
+  <string name="interval_week_2">Каждые %n недели</string>
+  <string name="interval_week_3">Каждые %n недель</string>
+  <string name="add">Добавить</string>
+  <string name="cancel">Отмена</string>
+	
+  <string name="settings_theme">Тема оформления</string>
+  <string name="settings_storage_type">Хранилище</string>
+	
+  <string name="dialog_title_account">Выберите аккаунт</string>
+	<string name="button_save">Сохранить</string>
+	<string name="success">Успешно</string>
+	
+	<string name="rate_dialog_title">Оценить приложение</string>
+	<string name="rate_dialog_message">Если вам нравится это приложение - вы можете оценить его в Google Play. Благодарим за поддержку!</string>
+	<string name="rate_dialog_ok">Оценить</string>
+	<string name="rate_dialog_cancel">В другой раз</string>
+	<string name="rate_dialog_no">Нет</string>
+	<string name="alert_error_nointernet">Пожалуйста, проверьте подключение к интернету</string>
+	
+	<string-array name="month">
+		
+		<item>Январь</item>
+		<item>Февраль</item>
+		<item>Март</item>
+		<item>Апрель</item>
+		<item>Май</item>
+		<item>Июнь</item>
+		<item>Июль</item>
+		<item>Август</item>
+		<item>Сентябрь</item>
+		<item>Октябрь</item>
+		<item>Ноябрь</item>
+		<item>Декабрь</item>
+		
+	</string-array>
+	
+	<string-array name="day">
+		
+		<item>Пн</item>
+		<item>Вт</item>
+		<item>Ср</item>
+		<item>Чт</item>
+		<item>Пт</item>
+		<item>Сб</item>
+		<item>Вс</item>
+		
+	</string-array>
+	
+	<string-array name="day_full">
+		
+		<item>Понедельник</item>
+		<item>Вторник</item>
+		<item>Среда</item>
+		<item>Четверг</item>
+		<item>Пятница</item>
+		<item>Суббота</item>
+		<item>Воскресенье</item>
+		
+	</string-array>
+	
+</resources>

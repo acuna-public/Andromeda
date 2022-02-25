@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pro.acuna.andromeda" >
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <application>
+        <service
+            android:name="pro.acuna.andromeda.AppsService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

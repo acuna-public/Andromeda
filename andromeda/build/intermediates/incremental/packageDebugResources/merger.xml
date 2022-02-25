@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\main\res"/><source path="D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\build\generated\res\rs\debug"/><source path="D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\main\res"><file path="D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\main\res\values\strings.xml" qualifiers=""><string name="title_error">Error</string><string name="loading">Loading, please wait…</string><string name="action_done">Done</string><string name="title_alert">Alert</string><string name="yes">Yes</string><string name="no">No</string><string name="button_restart">Reboot</string><string name="title_color_picker">Select a color</string><string name="message_save_settings_success">Settings saved successfully</string><string name="action_exit">Exit</string><string name="action_about">About</string><string name="title_version">Version</string><string name="action_refresh">Refresh</string><string name="button_close">Close</string><string name="action_settings">Settings</string><string name="title_input">Data input</string><string name="interval_never">Never</string><string name="interval_minute_0">Every minute</string><string name="interval_minute_1">Every %n minute</string><string name="interval_minute_2">Every %n minutes</string><string name="interval_minute_3">Every %n munutes</string><string name="interval_day_0">Every day</string><string name="interval_day_1">Every %n day</string><string name="interval_day_2">Every %n days</string><string name="interval_day_3">Every %n days</string><string name="interval_week_0">Every week</string><string name="interval_week_1">Every %n week</string><string name="interval_week_2">Every %n weeks</string><string name="interval_week_3">Every %n weeks</string><string name="ok" translatable="false">OK</string><string name="cancel">Cancel</string><string name="settings_theme">Theme</string><string name="settings_storage_type">Storage</string><string name="dialog_title_account">Select account</string><string name="add">Add</string><string name="button_save">Save</string><string name="success">Success</string><string name="rate_dialog_title">Rate this app</string><string name="rate_dialog_message">If you enjoy this app - you can rate it. Thanks for your support!</string><string name="rate_dialog_ok">Rate It Now</string><string name="rate_dialog_cancel">Remind Me Later</string><string name="rate_dialog_no">No, Thanks</string><string name="alert_error_nointernet">Please check your internet-connection</string><string-array name="month">
+		
+		<item>Январь</item>
+		<item>Февраль</item>
+		<item>Март</item>
+		<item>Апрель</item>
+		<item>Май</item>
+		<item>Июнь</item>
+		<item>Июль</item>
+		<item>Август</item>
+		<item>Сентябрь</item>
+		<item>Октябрь</item>
+		<item>Ноябрь</item>
+		<item>Декабрь</item>
+		
+	</string-array><string-array name="day">
+		
+		<item>Mon</item>
+		<item>Tue</item>
+		<item>Wed</item>
+		<item>Thu</item>
+		<item>Fri</item>
+		<item>Sat</item>
+		<item>Sun</item>
+		
+	</string-array><string-array name="day_full">
+		
+		<item>Понедельник</item>
+		<item>Вторник</item>
+		<item>Среда</item>
+		<item>Четверг</item>
+		<item>Пянтица</item>
+		<item>Суббота</item>
+		<item>Воскресенье</item>
+		
+	</string-array></file><file path="D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\main\res\values-ru\strings.xml" qualifiers="ru"><string name="title_error">Ошибка</string><string name="title_alert">Уведомление</string><string name="yes">Да</string><string name="no">Нет</string><string name="loading">Пожалуйста, подождите…</string><string name="action_done">Готово</string><string name="button_restart">Перезагрузить</string><string name="title_color_picker">Выберите цвет</string><string name="message_save_settings_success">Настройки успешно сохранены</string><string name="action_exit">Выход</string><string name="action_about">О программе</string><string name="title_version">Версия</string><string name="action_refresh">Обновить</string><string name="button_close">Закрыть</string><string name="action_settings">Настройки</string><string name="title_input">Ввод данных</string><string name="interval_never">Никогда</string><string name="interval_minute_0">Каждую минуту</string><string name="interval_minute_1">Каждую %n минуту</string><string name="interval_minute_2">Каждые %n минуты</string><string name="interval_minute_3">Каждые %n минут</string><string name="interval_day_0">Каждый день</string><string name="interval_day_1">Каждый %n день</string><string name="interval_day_2">Каждые %n дня</string><string name="interval_day_3">Каждые %n дней</string><string name="interval_week_0">Каждую неделю</string><string name="interval_week_1">Каждую %n неделю</string><string name="interval_week_2">Каждые %n недели</string><string name="interval_week_3">Каждые %n недель</string><string name="add">Добавить</string><string name="cancel">Отмена</string><string name="settings_theme">Тема оформления</string><string name="settings_storage_type">Хранилище</string><string name="dialog_title_account">Выберите аккаунт</string><string name="button_save">Сохранить</string><string name="success">Успешно</string><string name="rate_dialog_title">Оценить приложение</string><string name="rate_dialog_message">Если вам нравится это приложение - вы можете оценить его в Google Play. Благодарим за поддержку!</string><string name="rate_dialog_ok">Оценить</string><string name="rate_dialog_cancel">В другой раз</string><string name="rate_dialog_no">Нет</string><string name="alert_error_nointernet">Пожалуйста, проверьте подключение к интернету</string><string-array name="month">
+		
+		<item>Январь</item>
+		<item>Февраль</item>
+		<item>Март</item>
+		<item>Апрель</item>
+		<item>Май</item>
+		<item>Июнь</item>
+		<item>Июль</item>
+		<item>Август</item>
+		<item>Сентябрь</item>
+		<item>Октябрь</item>
+		<item>Ноябрь</item>
+		<item>Декабрь</item>
+		
+	</string-array><string-array name="day">
+		
+		<item>Пн</item>
+		<item>Вт</item>
+		<item>Ср</item>
+		<item>Чт</item>
+		<item>Пт</item>
+		<item>Сб</item>
+		<item>Вс</item>
+		
+	</string-array><string-array name="day_full">
+		
+		<item>Понедельник</item>
+		<item>Вторник</item>
+		<item>Среда</item>
+		<item>Четверг</item>
+		<item>Пятница</item>
+		<item>Суббота</item>
+		<item>Воскресенье</item>
+		
+	</string-array></file></source><source path="D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\build\generated\res\rs\debug"/><source path="D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\Projects\AndroidStudio\Libraries\Andromeda\andromeda\src\debug\res"/></dataSet><mergedItems/></merger>
