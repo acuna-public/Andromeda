@@ -1,2 +1,2 @@
 # Andromeda
- Thin layer wrapper for Android
+Andromeda is a powerful Android SDK wrapper
