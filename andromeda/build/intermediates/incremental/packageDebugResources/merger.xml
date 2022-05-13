@@ -24,6 +24,16 @@
 		<item>Sat</item>
 		<item>Sun</item>
 		
+	</string-array><string-array name="day2">
+		
+		<item>Sun</item>
+		<item>Mon</item>
+		<item>Tue</item>
+		<item>Wed</item>
+		<item>Thu</item>
+		<item>Fri</item>
+		<item>Sat</item>
+		
 	</string-array><string-array name="day_full">
 		
 		<item>Понедельник</item>
@@ -58,6 +68,16 @@
 		<item>Пт</item>
 		<item>Сб</item>
 		<item>Вс</item>
+		
+	</string-array><string-array name="day2">
+		
+		<item>Вс</item>
+		<item>Пн</item>
+		<item>Вт</item>
+		<item>Ср</item>
+		<item>Чт</item>
+		<item>Пт</item>
+		<item>Сб</item>
 		
 	</string-array><string-array name="day_full">
 		

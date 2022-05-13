@@ -226,6 +226,102 @@
 			output.put ("7.1.2", "Nougat");
 			
 			output.put ("8.0", "Oreo");
+			output.put ("8.1", "Oreo");
+			
+			output.put ("9", "Pie");
+			
+			output.put ("10", "Quince Tart");
+			
+			output.put ("11", "Red Velvet Cake");
+			
+			output.put ("12", "Snow Cone");
+			
+			return output;
+			
+		}
+		
+		public static Map<String, String> releasesNamesHypothetic () {
+			
+			Map<String, String> output = new LinkedHashMap<> ();
+			
+			output.put ("1.0", "Astroboy");
+			
+			output.put ("1.1", "Bender");
+			
+			output.put ("1.5", "Calculon");
+			
+			output.put ("1.6", "Donbot");
+			
+			output.put ("2.0", "Emotitron");
+			output.put ("2.0.1", "Emotitron");
+			output.put ("2.1", "Emotitron");
+			
+			output.put ("2.2", "Fabricio");
+			output.put ("2.2.1", "Fabricio");
+			output.put ("2.2.2", "Fabricio");
+			output.put ("2.2.3", "Fabricio");
+			
+			output.put ("2.3", "Gearshift");
+			output.put ("2.3.1", "Gearshift");
+			output.put ("2.3.2", "Gearshift");
+			output.put ("2.3.3", "Gearshift");
+			output.put ("2.3.4", "Gearshift");
+			output.put ("2.3.5", "Gearshift");
+			output.put ("2.3.6", "Gearshift");
+			output.put ("2.3.7", "Gearshift");
+			
+			output.put ("3.0", "Helper");
+			output.put ("3.0.1", "Helper");
+			output.put ("3.1", "Helper");
+			output.put ("3.2", "Helper");
+			output.put ("3.2.1", "Helper");
+			output.put ("3.2.2", "Helper");
+			
+			output.put ("4.0.1", "IHawk");
+			output.put ("4.0.2", "IHawk");
+			output.put ("4.0.3", "IHawk");
+			output.put ("4.0.4", "IHawk");
+			
+			output.put ("4.1.1", "Joey Mousepad");
+			output.put ("4.1.2", "Joey Mousepad");
+			output.put ("4.2", "Joey Mousepad");
+			output.put ("4.2.1", "Joey Mousepad");
+			output.put ("4.2.2", "Joey Mousepad");
+			output.put ("4.3", "Joey Mousepad");
+			output.put ("4.3.1", "Joey Mousepad");
+			
+			output.put ("4.4", "King Roberto");
+			output.put ("4.4.1", "King Roberto");
+			output.put ("4.4.2", "King Roberto");
+			output.put ("4.4.3", "King Roberto");
+			output.put ("4.4.4", "King Roberto");
+			
+			output.put ("5.0", "Leelabot");
+			output.put ("5.0.1", "Leelabot");
+			output.put ("5.0.2", "Leelabot");
+			output.put ("5.1", "Leelabot");
+			output.put ("5.1.1", "Leelabot");
+			
+			output.put ("6.0", "Mark 7G");
+			output.put ("6.0.1", "Mark 7G");
+			
+			output.put ("7.0", "Norm");
+			output.put ("7.1", "Norm");
+			output.put ("7.1.1", "Norm");
+			output.put ("7.1.2", "Norm");
+			
+			output.put ("8.0", "Oily");
+			output.put ("8.1", "Oily");
+			
+			output.put ("9", "Paco");
+			
+			output.put ("10", "Q.T. McWhiskers");
+			
+			output.put ("11", "Rusty");
+			
+			output.put ("12", "Sinclair 2K");
+			
+			output.put ("13", "Tandy");
 			
 			return output;
 			
@@ -322,6 +418,14 @@
 			output.put ("8.0", 26);
 			
 			output.put ("8.1", 27);
+			
+			output.put ("9", 28);
+			
+			output.put ("10", 29);
+			
+			output.put ("11", 30);
+			
+			output.put ("12", 31);
 			
 			return output;
 			
@@ -518,6 +622,10 @@
 				throw new RuntimeException (e);
 			}
 			
+		}
+		
+		public static void debug (Object... msg) {
+			debug (Arrays.implode (" - ", msg));
 		}
 		
 		public static void debug (JSONArray... msg) {

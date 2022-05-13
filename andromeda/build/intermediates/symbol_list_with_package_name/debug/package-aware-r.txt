@@ -1,5 +1,6 @@
 pro.acuna.andromeda
 array day
+array day2
 array day_full
 array month
 string action_about

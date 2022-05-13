@@ -36,11 +36,11 @@
 			
 			Map<String, Typeface> typefaces = new LinkedHashMap<> ();
 			
-			typefaces.put ("serif", Typeface.SERIF);
-			typefaces.put ("sans_serif", Typeface.SANS_SERIF);
-			typefaces.put ("monospace", Typeface.MONOSPACE);
-			typefaces.put ("default", Typeface.DEFAULT);
-			typefaces.put ("default_bold", Typeface.DEFAULT_BOLD);
+			typefaces.add ("serif", Typeface.SERIF);
+			typefaces.add ("sans_serif", Typeface.SANS_SERIF);
+			typefaces.add ("monospace", Typeface.MONOSPACE);
+			typefaces.add ("default", Typeface.DEFAULT);
+			typefaces.add ("default_bold", Typeface.DEFAULT_BOLD);
 			
 			return typefaces;
 			

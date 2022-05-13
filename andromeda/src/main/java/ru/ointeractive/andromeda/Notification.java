@@ -10,7 +10,9 @@
 	
 	import java.lang.reflect.Method;
 	
+	import ru.ointeractive.andromeda.apps.AppsService;
 	import ru.ointeractive.andromeda.graphic.Graphic;
+	import upl.core.Log;
 	
 	public class Notification extends android.app.Notification {
 		
@@ -34,7 +36,8 @@
 		
 		public Notification setIntent (Intent intent) {
 			
-			setIntent (PendingIntent.getActivity (context, 2, intent, PendingIntent.FLAG_UPDATE_CURRENT));
+			setIntent (PendingIntent.getActivity (context, 2, intent, AppsService.flagUpdateCurrent ()));
+			
 			return this;
 			
 		}
@@ -183,8 +186,7 @@
 				
 				_setPriority (mPriority);
 				
-			} else
-				notification15 = new android.app.Notification (smallIcon, text, java.lang.System.currentTimeMillis ());
+			} else notification15 = new android.app.Notification (smallIcon, text, java.lang.System.currentTimeMillis ());
 			
 			if (OS.SDK < 16) { // SUPPORT 16
 				

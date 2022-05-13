@@ -32,7 +32,8 @@
   import java.util.LinkedHashMap;
   import java.util.List;
   import java.util.Map;
-	
+  import java.util.Objects;
+
   import ru.ointeractive.andromeda.graphic.Graphic;
   import upl.core.Arrays;
   import upl.core.Console;
@@ -90,7 +91,7 @@
       else
         info.put ("cpu_type", Arrays.implode (", ", new String[] {Build.CPU_ABI, Build.CPU_ABI2}));
       
-      info.put ("cpu_arch", java.lang.System.getProperty ("os.arch"));
+      info.put ("cpu_arch", Objects.requireNonNull (java.lang.System.getProperty ("os.arch")));
       
       info.put ("device", Build.DEVICE);
       info.put ("display", Build.DISPLAY);
@@ -172,20 +173,18 @@
     
     public static List<String> reboot () throws ConsoleException {
       
-      String[] cmds = new String[] {
-        
-        "am broadcast -a android.intent.action.ACTION_SHUTDOWN",
-        "sleep 5",
-        "reboot",
-        
-      };
-      
       Console exec = new Console ();
       
       exec.shell (Console.su);
       //exec.sleep = 5000;
       
-      return exec.query (cmds);
+      return exec.query (new String[] {
+      	
+	      "am broadcast -a android.intent.action.ACTION_SHUTDOWN",
+	      "sleep 5",
+	      "reboot",
+				
+      });
       
     }
     
@@ -246,7 +245,6 @@
         
       }*/
     
-    @SuppressWarnings ("MissingPermission")
     public static NetworkInfo getNetworkInfo (Context context) {
       
       ConnectivityManager connManager = (ConnectivityManager) context.getSystemService (Context.CONNECTIVITY_SERVICE);

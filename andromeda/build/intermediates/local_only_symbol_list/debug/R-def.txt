@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 array day
+array day2
 array day_full
 array month
 string action_about

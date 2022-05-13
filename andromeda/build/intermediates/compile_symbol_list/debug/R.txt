@@ -1,4 +1,5 @@
 int array day 0x0
+int array day2 0x0
 int array day_full 0x0
 int array month 0x0
 int string action_about 0x0

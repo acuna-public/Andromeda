@@ -535,7 +535,7 @@
               }
               
               Intent intent = new Intent (OS.broadcastAction (context, "ACTION_INSTALL_COMMIT", 1));
-              PendingIntent pendingIntent = PendingIntent.getBroadcast (context, sessionId, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+              PendingIntent pendingIntent = PendingIntent.getBroadcast (context, sessionId, intent, AppsService.flagUpdateCurrent ());
               
               session.commit (pendingIntent.getIntentSender ());
               
@@ -655,7 +655,7 @@
               
               Intent intent = new Intent (OS.broadcastAction (context, "ACTION_UNINSTALL_COMMIT", 1));
               
-	            PendingIntent pendingIntent = PendingIntent.getBroadcast (context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+	            PendingIntent pendingIntent = PendingIntent.getBroadcast (context, 0, intent, AppsService.flagUpdateCurrent ());
               
               PackageInstaller packageInstaller = apps.pm.getPackageInstaller ();
               packageInstaller.uninstall (id, pendingIntent.getIntentSender ());
@@ -955,6 +955,17 @@
       if (receiver != null)
         context.unregisterReceiver (receiver);
       
+    }
+    
+    public static int flagUpdateCurrent () {
+    	
+	    int flag = PendingIntent.FLAG_UPDATE_CURRENT;
+			
+	    if (OS.SDK > 23)
+		    flag |= PendingIntent.FLAG_IMMUTABLE;
+			
+	    return flag;
+	    
     }
     
   }

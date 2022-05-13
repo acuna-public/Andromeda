@@ -4,46 +4,36 @@
 	import android.content.Context;
 	import android.content.Intent;
 	
+	import ru.ointeractive.andromeda.apps.AppsService;
 	import upl.core.Calendar;
+	import upl.core.Log;
 	
 	public class AlarmManager {
 	  
-	  private final Context context;
+	  protected final Context context;
+		
+		private PendingIntent pIntent;
 	  
-	  private PendingIntent pIntent;
-	  
-	  private android.app.AlarmManager alarmManager;
-	  
-	  public Integer type;
+	  public android.app.AlarmManager alarmManager;
+		
+		protected Integer type;
 	  
 	  public static long INTERVAL_WEEK = (android.app.AlarmManager.INTERVAL_DAY * 7);
 		public static long INTERVAL_MONTH = (INTERVAL_WEEK * 4);
 		
 		public AlarmManager (Context context) {
-	    this.context = context;
-	  }
-	  
-	  public AlarmManager setType (Integer type) {
+			this.context = context;
+		}
+		
+		public AlarmManager setType (Integer type) {
 	    
 	    this.type = type;
 	    return this;
 	    
 	  }
 		
-		public AlarmManager setIntent (Class<?> service) {
-			return setIntent (service, 0);
-		}
-		
-		public AlarmManager setIntent (Class<?> service, int requestCode) {
-	    return setIntent (new Intent (context, service), requestCode);
-	  }
-		
-		public AlarmManager setIntent (Intent intent) {
-			return setIntent (intent, 0);
-		}
-		
 		public AlarmManager setIntent (Intent intent, int requestCode) {
-	    return setIntent (PendingIntent.getBroadcast (context, requestCode, intent, PendingIntent.FLAG_UPDATE_CURRENT));
+	    return setIntent (PendingIntent.getBroadcast (context, requestCode, intent, AppsService.flagUpdateCurrent ()));
 	  }
 	  
 	  public AlarmManager setIntent (PendingIntent intent) {
@@ -55,17 +45,15 @@
 	   
 	  }
 		
-		public AlarmManager start (Calendar calendar, long interval) {
-			return start (calendar.getTimeInMillis (), interval);
-		}
-		
-		public AlarmManager start (long startTime, long interval) {
-	  	
-		  if (type == null) setType (android.app.AlarmManager.RTC);
+		public AlarmManager start (long startTime) {
+	   
+		  if (type == null) setType (android.app.AlarmManager.RTC_WAKEUP);
 			
-		  if (interval >= 0)
-			  alarmManager.setRepeating (type, startTime, interval, pIntent);
-		  else
+		  if (OS.SDK >= 23)
+			  alarmManager.setExactAndAllowWhileIdle (type, startTime, pIntent);
+			else if (OS.SDK >= 19)
+				alarmManager.setExact (type, startTime, pIntent);
+			else
 			  alarmManager.set (type, startTime, pIntent);
 			
 	    return this;
@@ -73,12 +61,12 @@
 	  }
 	  
 	  public AlarmManager stop () {
-	    
-	    alarmManager.cancel (pIntent);
+			
+		  alarmManager.cancel (pIntent);
 		  pIntent.cancel ();
 		  
 	    return this;
 	    
 	  }
-	  
+		
 	}
